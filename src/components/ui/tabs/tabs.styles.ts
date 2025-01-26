@@ -36,7 +36,7 @@ export const KebabMenu = styled.div`
   position: absolute;
   top: 60px;
   right: 10px;
-  background-color: ${(props) => props.theme.webSettings.primaryColour};
+  background-color: ${(props) => props.theme?.webSettings?.primaryColour};
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

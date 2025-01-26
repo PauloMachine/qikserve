@@ -18,13 +18,13 @@ export const Container = styled(Flex)<{
     Boolean(selectedTab === "true") ? "2px" : "none"};
   border-bottom-style: ${({ selectedTab }) =>
     Boolean(selectedTab === "true") ? "solid" : "none"};
-  border-bottom-color: ${(props) => props.theme.webSettings.primaryColour};
+  border-bottom-color: ${(props) => props.theme?.webSettings?.primaryColour};
 
   &:hover {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: ${(props) =>
-      props.theme.webSettings.primaryColourHover};
+      props.theme?.webSettings?.primaryColourHover};
   }
 `;
 
@@ -41,12 +41,12 @@ export const Content = styled(Flex)<{
     Boolean(selectedTab === "true") ? "2px" : "none"};
   border-style: ${({ selectedTab }) =>
     Boolean(selectedTab === "true") ? "solid" : "none"};
-  border-color: ${(props) => props.theme.webSettings.primaryColour};
+  border-color: ${(props) => props.theme?.webSettings?.primaryColour};
 
   &:hover {
     border-width: 2px;
     border-style: solid;
-    border-color: ${(props) => props.theme.webSettings.primaryColourHover};
+    border-color: ${(props) => props.theme?.webSettings?.primaryColourHover};
   }
 `;
 

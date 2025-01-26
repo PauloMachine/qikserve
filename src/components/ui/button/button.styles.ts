@@ -7,7 +7,7 @@ export const StyledButton = styled.button`
   padding-bottom: 8px;
   border-radius: 40px;
   border: none;
-  background-color: ${(props) => props.theme.webSettings.primaryColour};
+  background-color: ${(props) => props.theme?.webSettings?.primaryColour};
   cursor: pointer;
 
   &:disabled {

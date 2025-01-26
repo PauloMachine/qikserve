@@ -27,5 +27,5 @@ export const Badge = styled(Flex)`
   color: #fff;
   font-size: 14px;
   border-radius: 4px;
-  background-color: ${(props) => props.theme.webSettings.primaryColour};
+  background-color: ${(props) => props.theme?.webSettings?.primaryColour};
 `;
