@@ -26,7 +26,7 @@ const Navbar = () => {
       <Content>
         <Tabs tabs={tabs} isMobile={isMobile} />
       </Content>
-      <Image src={`${theme?.webSettings.bannerImage}`} />
+      <Image src={`${theme?.webSettings?.bannerImage}`} />
     </Container>
   );
 };
