@@ -4,6 +4,8 @@
 
 QIKSERVE is an application developed with React and TypeScript, utilizing modern technologies to create a responsive and efficient user interface. This project is designed to facilitate scalability and maintainability, with integration of services, localization, and state management.
 
+Link: https://qikserve-santiago.vercel.app/
+
 ## Project Structure
 
 The project structure follows best practices for separation of concerns:
@@ -98,4 +100,4 @@ npm test
 
 ---
 
-**Developed by [Your Name](https://github.com/PauloMachine)**
+**Developed by [Paulo Santiago](https://github.com/PauloMachine)**
