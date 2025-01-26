@@ -11,7 +11,7 @@ const routes = [
 const Routes = () => {
   return (
     <AppRoutes>
-      {routes.map(({ path, component: Component }) => (
+      {routes?.map(({ path, component: Component }) => (
         <Route key={path} path={path} Component={Component} />
       ))}
       <Route path="*" element={<Navigate to="/menu" replace />} />

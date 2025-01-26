@@ -71,7 +71,7 @@ const Basket = () => {
 
         {items.length > 0 ? (
           <>
-            {items.map((item) => (
+            {items?.map((item) => (
               <BasketItem
                 key={item.uniqueKey}
                 item={item}

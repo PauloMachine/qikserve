@@ -27,7 +27,7 @@ const Tabs = ({ tabs, isMobile }: TTabs & { isMobile: boolean }) => {
       </KebabIconWrapper>
       {isOpen && (
         <KebabMenu>
-          {tabs.map((tab: TTab, index: number) => (
+          {tabs?.map((tab: TTab, index: number) => (
             <KebabItem
               key={index}
               route={String(location.pathname.includes(`/${tab.route}`))}
@@ -44,7 +44,7 @@ const Tabs = ({ tabs, isMobile }: TTabs & { isMobile: boolean }) => {
     </StyledFlex>
   ) : (
     <>
-      {tabs.map((tab: TTab, index: number) => (
+      {tabs?.map((tab: TTab, index: number) => (
         <StyledFlex
           key={index}
           onClick={() => navigate(`/${tab.route}`)}

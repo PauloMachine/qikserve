@@ -114,7 +114,7 @@ const MenuModal = () => {
                       : translation("optionMaxChoices")}
                   </Typography>
                 </Content>
-                {selectedItem.modifiers[0].items.map((item: TModifierItem) => (
+                {selectedItem.modifiers[0].items?.map((item: TModifierItem) => (
                   <MenuModifier
                     item={item}
                     key={item.id}

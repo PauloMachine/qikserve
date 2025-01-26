@@ -8,7 +8,7 @@ import type { TMenuTabs } from "./menu.types";
 const MenuTabs = ({ sections, selectedTab, onTabClick }: TMenuTabs) => {
   return (
     <Flex gap="12" direction="row" justify="flex-start">
-      {sections.map((section: TSection) => (
+      {sections?.map((section: TSection) => (
         <Container
           key={section.id}
           selectedTab={String(selectedTab === section.name)}
