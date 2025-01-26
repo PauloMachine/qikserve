@@ -68,5 +68,5 @@ export const KebabIconWrapper = styled.div`
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 99999;
+  z-index: 1;
 `;
