@@ -1,46 +1,101 @@
-# Getting Started with Create React App
+# QIKSERVE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
+
+QIKSERVE is an application developed with React and TypeScript, utilizing modern technologies to create a responsive and efficient user interface. This project is designed to facilitate scalability and maintainability, with integration of services, localization, and state management.
+
+## Project Structure
+
+The project structure follows best practices for separation of concerns:
+
+- **src/app**: General configurations and application initialization.
+- **src/components**: Reusable components.
+- **src/features**: Main modules with specific functionalities:
+  - **basket**: Features related to the shopping basket.
+  - **menu**: Includes menu item management, modifications, and sections.
+  - **venue**: Venue management.
+- **src/locales**: Localization files to support different languages.
+- **src/pages**: Centering pages and referencing components.
+- **src/services**: Shared services like API calls.
+- **src/tests**: Unit and integration tests.
+
+## Technologies Used
+
+- **React** and **React DOM**: Building user interfaces.
+- **TypeScript**: Static typing for improved reliability and scalability.
+- **Axios**: HTTP requests.
+- **React Router**: Routing management.
+- **Redux Toolkit**: State management.
+- **Styled Components**: Component styling.
+- **React Query**: Handling asynchronous data.
+- **i18next**: Localization.
+
+## Installation and Running
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/qikserve.git
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Configure the API base URL in the `.env` file:
+
+   ```env
+   REACT_APP_QIKSERVE_URL=https://cdn-dev.preoday.com
+   ```
+
+4. Run the application in development mode:
+
+   ```bash
+   npm start
+   ```
+
+5. Access it in your browser:
+   ```
+   http://localhost:3000
+   ```
 
 ## Available Scripts
 
-In the project directory, you can run:
+- **`npm start`**: Starts the application in development mode.
+- **`npm build`**: Builds the app for production.
+- **`npm test`**: Runs tests with Jest.
+- **`npm eject`**: Exposes build configurations (irreversible).
 
-### `yarn start`
+## Testing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The project uses **Jest** for unit tests and **Testing Library** for React component tests. To run tests:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm test
+```
 
-### `yarn test`
+## Code Conventions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Typing**: Always use TypeScript to ensure consistency.
+- **Styling**: Prefer **Styled Components** for managing styles.
+- **Commits**: Follow the **Conventional Commits** convention for clear messages.
 
-### `yarn build`
+## Key Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **`axios`**: ^1.7.9
+- **`react`**: ^19.0.0
+- **`styled-components`**: ^6.1.14
+- **`react-query`**: ^5.64.2
+- **`redux-toolkit`**: ^2.5.0
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Development Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **`jest`**: ^29.7.0
+- **`ts-jest`**: ^29.2.5
+- **`@testing-library/react`**: ^16.0.0
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Developed by [Your Name](https://github.com/PauloMachine)**
